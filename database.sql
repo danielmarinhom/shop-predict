@@ -45,7 +45,7 @@ CREATE TABLE tbl_cliente(
 
 CREATE TABLE tbl_categoria(
     id BIGINT IDENTITY(1,1) PRIMARY KEY,
-    popularidade tinyint CHECK(popularidade BETWEEN 0 AND 100),
+    popularidade tinyint CHECK(popularidade BETWEEN 0 AND 100) NOT NULL,
     nome nvarchar(50) NOT NULL
 )
 
